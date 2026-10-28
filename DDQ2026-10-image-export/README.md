@@ -86,9 +86,9 @@ Pick your level. Every level starts with the same dashboard.
 
 ## What a finished result looks like
 
-What a screen reader announces before and after, for the sample infographic. These values were read from Chrome's accessibility tree, which is what screen readers use.
+What a screen reader announces before and after, for the sample infographic. The infographic is in Spanish; with a language switch, someone who doesn't read Spanish can understand it in English. These values were read from Chrome's accessibility tree, which is what screen readers use.
 
-![What a screen reader hears, before and after](images/screen-reader-before-after.png)
+![What a screen reader hears, before and after, in English](images/screen-reader-before-after-en.png)
 
 The only lines that change in the SVG. The other ~970 lines of drawing stay exactly as Tableau wrote them.
 
