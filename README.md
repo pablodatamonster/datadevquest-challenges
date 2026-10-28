@@ -38,4 +38,4 @@ Folder names start with the DataDevQuest code (`DDQ` + year + month), so they so
 
 ## Maintainer
 
-[Pablo Gomez](https://www.linkedin.com/in/pablolgomez), Tableau Visionary, Tableau Ambassador and DataDev Ambassador, co-lead of the DataDev Tableau User Group. [GitHub](https://github.com/pablodatamonster) · [Tableau Public](https://public.tableau.com/app/profile/pablolgomez)
+[Pablo Gomez](https://www.linkedin.com/in/pablolgomez), Tableau Visionary, Tableau DataDev Ambassador, co-lead of the DataDev Tableau User Group. [GitHub](https://github.com/pablodatamonster) · [Tableau Public](https://public.tableau.com/app/profile/pablolgomez) · [LinkedIn](https://www.linkedin.com/in/pablolgomez/)
