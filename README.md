@@ -8,6 +8,8 @@ DataDevQuest is a global, community-powered initiative for people who want to le
 - embed analytics into custom applications
 - build advanced, automated solutions
 
+**Star or watch this repo** to get each new challenge and its solution as soon as they land.
+
 Each challenge is introduced at a DataDev TUG meetup. Participants work on it during the month, and a solution is walked through at the next meetup. There is never only one right answer: every approach that works is welcome.
 
 ## Challenges

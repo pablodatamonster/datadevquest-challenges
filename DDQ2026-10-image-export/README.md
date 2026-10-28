@@ -120,7 +120,7 @@ The only lines that change in the SVG. The other ~970 lines of drawing stay exac
 
 - Post your solution in `#datadev-quest-challenges` on the [Tableau #DataDev Slack](https://tableau-datadev.slack.com)
 - Challenge details at [datadevquest.com](https://datadevquest.com)
-- A solution walkthrough at the November 2026 TUG, added here afterwards
+- A solution walkthrough at the November 2026 TUG, added here afterwards. **Star or watch the repo** so you don't miss it
 
 ## Credits
 
