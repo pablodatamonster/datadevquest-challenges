@@ -78,7 +78,7 @@ Pick your level. Every level starts with the same dashboard.
 
 ### Intermediate
 - All three steps: Export, Describe, Ship
-- Loop over a filter so each region gets its own accessible SVG
+- Repeat it for each value of a filter, e.g. one accessible SVG per Region (`?vf_Region=West`, `?vf_Region=East`, ...)
 
 ### Bonus: make it reusable
 - Package the process so anyone can run it
@@ -120,7 +120,7 @@ The only lines that change in the SVG. The other ~970 lines of drawing stay exac
 
 - Post your solution in `#datadev-quest-challenges` on the [Tableau #DataDev Slack](https://tableau-datadev.slack.com)
 - Challenge details at [datadevquest.com](https://datadevquest.com)
-- One possible solution will be walked through at the November 2026 TUG and added here
+- A solution walkthrough at the November 2026 TUG, added here afterwards
 
 ## Credits
 

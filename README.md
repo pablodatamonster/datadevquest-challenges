@@ -8,7 +8,7 @@ DataDevQuest is a global, community-powered initiative for people who want to le
 - embed analytics into custom applications
 - build advanced, automated solutions
 
-Each challenge is introduced at a DataDev TUG meetup. Participants work on it during the month, and one possible solution is walked through at the next meetup.
+Each challenge is introduced at a DataDev TUG meetup. Participants work on it during the month, and a solution is walked through at the next meetup. There is never only one right answer: every approach that works is welcome.
 
 ## Challenges
 
@@ -24,7 +24,7 @@ DDQ<year>-<month>-<short-name>/
 ├── images/      screenshots used in the brief
 ├── sample/      input files to test with
 ├── demo/        a live page showing what a finished result looks like (when there is one)
-└── solution/    one possible solution, added after it is presented at the next TUG
+└── solution/    the solution walked through at the next TUG, added afterwards
 ```
 
 Folder names start with the DataDevQuest code (`DDQ` + year + month), so they sort in date order.
