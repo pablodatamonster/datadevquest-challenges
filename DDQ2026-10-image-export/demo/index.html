@@ -17,7 +17,8 @@ main{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:40px;padding
 .frame{position:sticky;top:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;overflow:hidden}
 #scaleBox{position:relative;overflow:hidden}
 #scaleBox>div{transform-origin:0 0;width:1000px}
-.seg{display:inline-flex;background:#eceef3;border-radius:999px;padding:4px;gap:4px;margin-bottom:20px}
+.controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
+.seg{display:inline-flex;background:#eceef3;border-radius:999px;padding:4px;gap:4px}
 .seg button{font:inherit;font-weight:600;font-size:15px;border:0;border-radius:999px;padding:9px 18px;cursor:pointer;background:transparent;color:var(--muted)}
 .seg button[aria-pressed="true"]{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(0,0,0,.12)}
 .card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:22px 24px;margin-bottom:20px}
@@ -41,7 +42,7 @@ pre .hl{display:block;border-left:4px solid var(--blue);background:rgba(75,107,2
 .note{border-left:4px solid var(--orange);background:#fff8f2}
 .note p{margin:6px 0 0;font-size:15.5px}
 code{font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f0f1f4;padding:1px 5px;border-radius:4px}
-@media (max-width:860px){.frame{position:static;width:100%;max-width:320px;margin:0 auto}#langSeg{margin-left:0 !important}}
+@media (max-width:860px){.frame{position:static;width:100%;max-width:320px;margin:0 auto}.controls{flex-direction:column;align-items:stretch}.seg{display:flex}.seg button{flex:1}}
 </style></head>
 <body>
 <header>
@@ -1024,14 +1025,16 @@ code{font-family:'JetBrains Mono',monospace;font-size:.9em;background:#f0f1f4;pa
 </g>
 </svg></div></div></div>
 <div id="panel">
+<div class="controls">
 <div class="seg" role="group" aria-label="Choose version">
 <button id="bBefore" aria-pressed="false">Tableau export</button>
 <button id="bAfter" aria-pressed="true">After step 3</button>
 </div>
 
-<div class="seg" role="group" aria-label="Choose language" id="langSeg" style="margin-left:8px">
+<div class="seg" role="group" aria-label="Choose language" id="langSeg">
 <button id="lEs" aria-pressed="true">Español</button>
 <button id="lEn" aria-pressed="false">English</button>
+</div>
 </div>
 
 <div class="card" id="reader">
