@@ -15,8 +15,8 @@ h1{font-size:34px;line-height:1.15;margin:0 0 6px;font-weight:700;letter-spacing
 main{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:40px;padding:24px 40px 48px;max-width:1280px;margin:0 auto;align-items:start}
 @media (max-width:860px){main{grid-template-columns:1fr;padding:16px 20px 40px}header{padding:24px 20px 4px}}
 .frame{position:sticky;top:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px;overflow:hidden}
-#scaleBox{position:relative;overflow:hidden}
-#scaleBox>div{transform-origin:0 0;width:1000px}
+#scaleBox{position:relative}
+#svgHost svg{display:block;width:100%;height:auto}
 .controls{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}
 .seg{display:inline-flex;background:#eceef3;border-radius:999px;padding:4px;gap:4px}
 .seg button{font:inherit;font-weight:600;font-size:15px;border:0;border-radius:999px;padding:9px 18px;cursor:pointer;background:transparent;color:var(--muted)}
@@ -1095,7 +1095,7 @@ function apply(){
   document.getElementById('lang').textContent = svg.getAttribute('lang') || 'not set: uses the page language (English)';
   document.getElementById('name').classList.toggle('mono', mode==='before');
   document.getElementById('desc').classList.toggle('mono', mode==='before');
-  const open = svg.outerHTML.match(/^<svg[^>]*>/)[0];
+  const open = svg.outerHTML.match(/^<svg[^>]*>/)[0].replace(/ viewBox="[^"]*"/,'');
   const lines = [open, tEl.outerHTML, dEl.outerHTML].map(l => '<span class="hl">'+esc(l)+'</span>');
   document.getElementById('code').innerHTML = lines.join('') + esc('<defs>\n  <clipPath id="clipPath1"> …');
   document.body.classList.toggle('state-before', mode==='before');
@@ -1130,9 +1130,9 @@ document.getElementById('speak').onclick = () => {
 };
 
 // Scale the 1000 x 2500 drawing to fit the column without editing the SVG
-const box = document.getElementById('scaleBox'), inner = box.firstElementChild;
-function fit(){ const w = box.clientWidth; const k = w/1000; inner.style.transform = 'scale('+k+')'; box.style.height = (2500*k)+'px'; }
-new ResizeObserver(fit).observe(box); fit();
+// Let the SVG scale natively: Tableau's export has no viewBox, so add one for display only.
+// The drawing is 1000 x 2500 units (264.583mm x 661.458mm). The code panel hides this display-only attribute.
+if (!svg.getAttribute('viewBox')) svg.setAttribute('viewBox','0 0 1000 2500');
 apply();
 </script>
 </body></html>
