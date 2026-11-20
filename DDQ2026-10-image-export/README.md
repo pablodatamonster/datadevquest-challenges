@@ -2,6 +2,11 @@
 
 ### A picture is worth a thousand words. We only need 150.
 
+> [!TIP]
+> **Looking for the solution?** It's ready: a Python script, a Claude Skill you can install in a couple of clicks, and worked examples in Spanish and English.
+>
+> <a href="solution/"><img src="images/solution/button-solution.png" alt="See the solution: script, Claude Skill and examples" width="420"></a>
+
 | | |
 |---|---|
 | **Code** | `#DDQ2026-10` |
