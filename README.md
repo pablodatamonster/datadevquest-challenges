@@ -16,7 +16,7 @@ Each challenge is introduced at a DataDev TUG meetup. Participants work on it du
 
 | Code | Challenge | Topics | Presented | Status |
 |---|---|---|---|---|
-| [DDQ2026-10](DDQ2026-10-image-export/) | **Image Exports**: a picture is worth a thousand words. We only need 150. | REST API, TSC, Tableau MCP, AI, SVG accessibility | October 2026 TUG | Open. Solution at the November 2026 TUG |
+| [DDQ2026-10](DDQ2026-10-image-export/) | **Image Exports**: a picture is worth a thousand words. We only need 150. | REST API, TSC, Tableau MCP, AI, SVG accessibility | October 2026 TUG | Solution available: [script and Claude Skill](DDQ2026-10-image-export/solution/) |
 
 ## How each challenge folder is organised
 

@@ -8,7 +8,7 @@
 | **Levels** | Beginner, Intermediate, Bonus |
 | **Tools** | REST API or Tableau Server Client (TSC), Tableau MCP (optional), any AI model that can read images |
 | **Presented** | DataDev Tableau User Group, October 2026 |
-| **Solution** | Walked through at the November 2026 TUG and added to this folder |
+| **Solution** | [`solution/`](solution/): script, Claude Skill and examples (November 2026 TUG) |
 | **Author** | [Pablo Gomez](https://www.linkedin.com/in/pablolgomez) |
 
 **[Open the live demo](https://pablodatamonster.github.io/datadevquest-challenges/DDQ2026-10-image-export/demo/)** to see what a finished result looks like: switch between the original Tableau export and the accessible version, change the language, and hear what a screen reader reads.
@@ -120,7 +120,7 @@ The only lines that change in the SVG. The other ~970 lines of drawing stay exac
 
 - Post your solution in `#datadev-quest-challenges` on the [Tableau #DataDev Slack](https://tableau-datadev.slack.com)
 - Challenge details at [datadevquest.com](https://datadevquest.com)
-- A solution walkthrough at the November 2026 TUG, added here afterwards. **Star or watch the repo** so you don't miss it
+- **Solution:** walked through at the November 2026 TUG. See [`solution/`](solution/) for the script, the Claude Skill and examples
 
 ## Credits
 
