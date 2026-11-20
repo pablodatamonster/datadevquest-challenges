@@ -76,6 +76,8 @@ The AI drafts; a person checks. The script prints the alt text and summary and s
 
 [`skill/tableau-accessible-svg`](skill/tableau-accessible-svg/) packages the whole process so anyone can run it by asking Claude. No code and no API key: Claude reads the PNG itself and a small script, [`ship_svg.py`](skill/tableau-accessible-svg/scripts/ship_svg.py), writes the text into the SVG.
 
+<a href="https://github.com/pablodatamonster/datadevquest-challenges/raw/main/DDQ2026-10-image-export/solution/skill/tableau-accessible-svg.zip"><img src="../images/solution/button-skill.png" alt="Download the Claude Skill: tableau-accessible-svg.zip" width="460"></a>
+
 **1. Install it (once)**
 
 - Download [`tableau-accessible-svg.zip`](https://github.com/pablodatamonster/datadevquest-challenges/raw/main/DDQ2026-10-image-export/solution/skill/tableau-accessible-svg.zip).
