@@ -117,6 +117,8 @@ Look at the image and return ONLY a JSON object with two keys:
 - "summary": 2 to 4 sentences with the key numbers a sighted reader would notice: totals, the largest and smallest values, notable trends.
 
 Rules: write in {language}. Use only numbers you can read in the image; never guess.
+Describe the chart exactly as it is: report its figures and claims as stated, even if they look wrong.
+Do not fact-check, critique or comment on the data or the design, and add nothing outside the JSON.
 {context}"""
 
 
