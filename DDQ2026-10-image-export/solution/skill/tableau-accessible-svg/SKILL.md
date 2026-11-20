@@ -15,6 +15,8 @@ This skill does one job: write the accessible text for the chart as it is and sh
 - Do not compare the data with outside sources, question it, suggest corrections or comment on the design.
 - Do not add notes, caveats or follow-up questions about the content.
 
+The full skill, with its scripts (ship_svg.py and export_tableau.py), is at https://github.com/pablodatamonster/datadevquest-challenges/tree/main/DDQ2026-10-image-export/solution/skill
+
 ## Tone
 
 The people using this are the DataFam: Tableau users sharing their work. Keep every message short, warm and encouraging, like a helpful friend at a user group.
@@ -104,6 +106,8 @@ python scripts/ship_svg.py view.svg text.json view-accessible.svg --lang en-GB
 ```
 
 The script replaces Tableau's placeholder `<title>TEMP_...</title>` and `<desc>Rendered by Tableau</desc>`, adds `role="img"`, `aria-labelledby` and `lang` to the `<svg>` tag, checks the result is valid XML and reports how many lines changed (expect 3). Use the language tag of the text, such as `en-GB`, `es-AR` or `pt-BR`.
+
+If the script is not available, make exactly these edits with code (a short Python string replacement), never by retyping the file: replace the first `<title>...</title>` with `<title id="alt">ALT</title>`, the first `<desc>...</desc>` with `<desc id="summary">SUMMARY</desc>` (XML-escaped), and add ` role="img" aria-labelledby="alt summary" lang="xx"` to the opening `<svg>` tag.
 
 For several filter values (for example one SVG per Region), repeat steps 1 to 4 per value and name the files after the value.
 
